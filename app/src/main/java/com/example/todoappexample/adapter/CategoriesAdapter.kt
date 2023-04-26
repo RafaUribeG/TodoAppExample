@@ -10,7 +10,8 @@ import com.example.todoappexample.viewHolder.CategoriesViewHolder
 class CategoriesAdapter(private val categories: List<TasksCategory>) :
     RecyclerView.Adapter<CategoriesViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesViewHolder {
-        val binding = ItemTaskCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ItemTaskCategoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return CategoriesViewHolder(binding)
     }
 
