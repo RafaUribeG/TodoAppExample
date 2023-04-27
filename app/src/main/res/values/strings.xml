@@ -6,4 +6,9 @@
     <string name="app_businessTitle">Business</string>
     <string name="app_personalTitle">Personal</string>
     <string name="app_otherTitle">Other</string>
+    <string name="app_dialog_add_task">Añade nueva tarea</string>
+    <string name="app_rb_business">Business</string>
+    <string name="app_rb_personal">Personal</string>
+    <string name="app_rb_other">Other</string>
+    <string name="app_btn_add_task">Añadir tarea</string>
 </resources>

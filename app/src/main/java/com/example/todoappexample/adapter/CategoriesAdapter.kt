@@ -7,7 +7,10 @@ import com.example.todoappexample.data.TasksCategory
 import com.example.todoappexample.databinding.ItemTaskCategoryBinding
 import com.example.todoappexample.viewHolder.CategoriesViewHolder
 
-class CategoriesAdapter(private val categories: List<TasksCategory>) :
+class CategoriesAdapter(
+    private val categories: List<TasksCategory>,
+    private val onItemSelected: (Int) -> Unit
+) :
     RecyclerView.Adapter<CategoriesViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesViewHolder {
         val binding =
@@ -17,7 +20,7 @@ class CategoriesAdapter(private val categories: List<TasksCategory>) :
 
 
     override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
-        holder.render(categories[position])
+        holder.render(categories[position], onItemSelected)
     }
 
     override fun getItemCount() = categories.size
